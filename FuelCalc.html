@@ -2,44 +2,46 @@
 <!doctype html>
 
 <html lang="en">
-  <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <title>Fuel Calculator</title>
-  </head>
-  <body>
-    <h1><p style="margin-left: 120px">Fuel Calculator</p>  </h1>
-    <form>
-      <p style="margin-left: 40px"> Requested Number of Gallons</p>
-      <p style="margin-left: 40px"> <input type="number" name="gallons" oninput="gallons.value" ><br><font size="0">Please enter gallons wanted</font></p><br>
-      <p style="margin-left: 40px"> Select Delivery Date</p>
-      <p style="margin-left: 40px"><input type="text" name="dd/mm/yyyy"><br></p><br>
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+    crossorigin="anonymous">
 
-      <p style="margin-left: 40px">  <button type="button" onclick="12*gallons">Calculate </button>  </p><br><br>
 
-      <br><br><br><br><p style="margin-left: 40px"> Total Amount Due</p>
-      <p style="margin-left: 40px">$<br></p><br>
+  <!-- Our stylesheet -->
+  <link rel="stylesheet" href="styles/style.css">
 
-      <p style="margin-left: 40px"><button type="button">Order History</button> &NonBreakingSpace;&NonBreakingSpace; &NonBreakingSpace;
-        &NonBreakingSpace;&NonBreakingSpace; &NonBreakingSpace;
-        &NonBreakingSpace;&NonBreakingSpace; &NonBreakingSpace;
-        &NonBreakingSpace;&NonBreakingSpace; &NonBreakingSpace;
-        &NonBreakingSpace;&NonBreakingSpace; &NonBreakingSpace;
-        &NonBreakingSpace;&NonBreakingSpace; &NonBreakingSpace;
-        &NonBreakingSpace;&NonBreakingSpace; &NonBreakingSpace;
-        &NonBreakingSpace;&NonBreakingSpace; &NonBreakingSpace;
-        &NonBreakingSpace;&NonBreakingSpace; &NonBreakingSpace;
-        &NonBreakingSpace;&NonBreakingSpace; &NonBreakingSpace;
-        <button type="button">Log Out</button>
-    
-    </p><br><br>
+  <title>Fuel Calculator</title>
+</head>
 
-    </form>
+<body>
+  <form class="form-group">
+    <div class="container" style="margin-top: 40px">
 
-  </body>
+      <h1>Fuel Calculator</h1>
+      <p>Requested Number of Gallons</p>
+      <input class="form-control" type="text" name="gallons">
+
+      <p> Select Delivery Date</p>
+      <input class="form-control" type="text">
+
+      <button class="btn btn-success" type="button">Calculate </button>
+
+      <h1 style="margin-top: 25px"> Total Amount Due: </h1>
+      <h1>$</h1>
+
+      <button class="btn btn-primary" type="button">Order History</button>
+
+      <button class="btn btn-danger" type="button">Log Out</button>
+    </div>
+
+  </form>
+
+</body>
+
 </html>

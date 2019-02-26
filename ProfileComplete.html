@@ -2,53 +2,51 @@
 <!doctype html>
 
 <html lang="en">
-  <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <title>Complete Your Profile</title>
-  </head>
-  <body>
-    <h1><p style="margin-left: 120px">Complete Your Profile</p>  </h1>
-    <form>
-      <p style="margin-left: 40px"> Full Name</p>
-      <p style="margin-left: 40px"> <input type="text" name="fullname"><br><font size="0">Please enter full name. Ex:Bill B. Baggins</font></p><br>
-      <p style="margin-left: 40px"> Address 1</p>
-      <p style="margin-left: 40px"><input type="text" name="address1"><br><font size="0">Please enter address. Ex:123 Gondor Dr.</font></p><br>
-      <p style="margin-left: 40px">Address 2(Optional)</p>
-      <p style="margin-left: 40px"><input type="text" name="address2"><br><font size="0">Optional.</font></p><br>
-      <p style="margin-left: 40px">  City &NonBreakingSpace;&NonBreakingSpace; &NonBreakingSpace;
-          &NonBreakingSpace;&NonBreakingSpace; &NonBreakingSpace;
-          &NonBreakingSpace;&NonBreakingSpace; &NonBreakingSpace;
-          &NonBreakingSpace;&NonBreakingSpace; &NonBreakingSpace;
-          &NonBreakingSpace;&NonBreakingSpace; &NonBreakingSpace;
-          &NonBreakingSpace;&NonBreakingSpace; &NonBreakingSpace;
-          &NonBreakingSpace;&NonBreakingSpace; &NonBreakingSpace;
-          &NonBreakingSpace;&NonBreakingSpace; &NonBreakingSpace;
-          &NonBreakingSpace;&NonBreakingSpace; &NonBreakingSpace;
-          &NonBreakingSpace;&NonBreakingSpace; &NonBreakingSpace;
-          &NonBreakingSpace;&NonBreakingSpace; &NonBreakingSpace;
-          State  </p>
-      <p style="margin-left: 40px"><input type="text" name="city">
-        &NonBreakingSpace;&NonBreakingSpace; &NonBreakingSpace;
-        &NonBreakingSpace;&NonBreakingSpace; &NonBreakingSpace;
-        &NonBreakingSpace;&NonBreakingSpace; 
-        
-        
-        <input type="text" name="state">
-      </p><br>
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+    crossorigin="anonymous">
+
+  <!-- Our stylesheet -->
+  <link rel="stylesheet" href="styles/style.css">
+
+  <title>Complete Your Profile</title>
+</head>
+
+<body>
+  <form style="margin-top: 50px" class="form-group">
+    <div class="container">
+      <h1>Complete Your Profile</h1>
+
+      <p> Full Name</p>
+      <input class="form-control" type="text" name="fullname" placeholder="Please enter full name. Ex:Bill B. Baggins">
       
+      <p> Address 1</p>
+      <input class="form-control" type="text" name="address1" placeholder="Please enter address. Ex:123 Gondor Dr.">
       
-      <p style="margin-left: 40px"> Zipcode</p>
-      <p style="margin-left: 40px"><input type="number" name=zipcode></p><br>
+      <p>Address 2 (Optional)</p>
+      <input  class="form-control" type="text" name="address2">
 
-      <p style="margin-left: 40px"><button type="button">Update Profile</button></p><br><br>
+      <p>City</p>
+      <input  class="form-control" type="text" name="city">
 
-    </form>
+      <p>State</p>
+      <input  class="form-control" type="text" name="state">
 
-  </body>
+      <p>Zipcode</p>
+      <input  class="form-control" type="text" name=zipcode>
+
+      <button style="margin-top: 25px" class="btn btn-primary" type="button">Submit</button>
+
+    </div>
+
+  </form>
+
+</body>
+
 </html>
